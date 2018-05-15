@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:OpenGLShaderBasic/OpenGLShaderBasic.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BasicScene/BasicScene.xcodeproj">
    </FileRef>
    <FileRef

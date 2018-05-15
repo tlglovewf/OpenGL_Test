@@ -1,0 +1,220 @@
+// !$*UTF8*$!
+{
+	089C165DFE840E0CC02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1411, 727}}";
+			sepNavSelRange = "{45, 0}";
+			sepNavVisRange = "{0, 45}";
+		};
+	};
+	256AC3D90F4B6AC300CF3369 /* OpenGLShaderBasicAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1411, 759}}";
+			sepNavSelRange = "{406, 0}";
+			sepNavVisRange = "{0, 406}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = E5492F451258F394008D42DA /* OpenGLShaderBasic */;
+		activeTarget = 8D1107260486CEB800E47090 /* OpenGLShaderBasic */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* OpenGLShaderBasic */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = E5492F571258F3B0008D42DA /* Code sense */;
+		executables = (
+			E5492F451258F394008D42DA /* OpenGLShaderBasic */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1233,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					1173,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1193,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 307885345;
+			PBXWorkspaceStateSaveDate = 307885345;
+		};
+		perUserProjectItems = {
+			E5A34CD21259C8A900442396 /* PBXTextBookmark */ = E5A34CD21259C8A900442396 /* PBXTextBookmark */;
+			E5A34D031259C96700442396 /* PBXTextBookmark */ = E5A34D031259C96700442396 /* PBXTextBookmark */;
+			E5E8DEC31259F7F400811E8A /* PBXTextBookmark */ = E5E8DEC31259F7F400811E8A /* PBXTextBookmark */;
+		};
+		sourceControlManager = E5492F561258F3B0008D42DA /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107260486CEB800E47090 /* OpenGLShaderBasic */ = {
+		activeExec = 0;
+		executables = (
+			E5492F451258F394008D42DA /* OpenGLShaderBasic */,
+		);
+	};
+	8D1107310486CEB800E47090 /* OpenGLShaderBasic-Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 95}, {1058, 928}}";
+		};
+	};
+	E5492F451258F394008D42DA /* OpenGLShaderBasic */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = OpenGLShaderBasic;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	E5492F561258F3B0008D42DA /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	E5492F571258F3B0008D42DA /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	E5492F601258F4FF008D42DA /* MyGLView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1411, 732}}";
+			sepNavSelRange = "{235, 0}";
+			sepNavVisRange = "{0, 235}";
+		};
+	};
+	E5492F611258F4FF008D42DA /* MyGLView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1411, 2925}}";
+			sepNavSelRange = "{4525, 0}";
+			sepNavVisRange = "{3845, 1222}";
+		};
+	};
+	E5A34CD21259C8A900442396 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* OpenGLShaderBasicAppDelegate.m */;
+		name = "OpenGLShaderBasicAppDelegate.m: 20";
+		rLen = 0;
+		rLoc = 406;
+		rType = 0;
+		vrLen = 406;
+		vrLoc = 0;
+	};
+	E5A34D031259C96700442396 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E5492F611258F4FF008D42DA /* MyGLView.m */;
+		name = "MyGLView.m: 53";
+		rLen = 0;
+		rLoc = 1115;
+		rType = 0;
+		vrLen = 1292;
+		vrLoc = 511;
+	};
+	E5B386591259C6760018F1B9 /* Shader.fsh */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1411, 758}}";
+			sepNavSelRange = "{161, 0}";
+			sepNavVisRange = "{0, 209}";
+			sepNavWindowFrame = "{{15, 95}, {1058, 928}}";
+		};
+	};
+	E5B3865A1259C6760018F1B9 /* Shader.vsh */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1411, 758}}";
+			sepNavSelRange = "{303, 0}";
+			sepNavVisRange = "{0, 303}";
+			sepNavWindowFrame = "{{15, 95}, {1058, 928}}";
+		};
+	};
+	E5E8DEC31259F7F400811E8A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E5492F611258F4FF008D42DA /* MyGLView.m */;
+		name = "MyGLView.m: 202";
+		rLen = 0;
+		rLoc = 4525;
+		rType = 0;
+		vrLen = 1222;
+		vrLoc = 3845;
+	};
+}

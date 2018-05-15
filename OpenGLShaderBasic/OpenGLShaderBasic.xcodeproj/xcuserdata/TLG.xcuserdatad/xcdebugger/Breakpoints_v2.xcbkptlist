@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   type = "0"
+   type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
@@ -9,14 +9,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BasicScene/BasicScene/main.cpp"
-            timestampString = "548046169.618259"
+            filePath = "MyGLView.m"
+            timestampString = "548045873.544557"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "createProgram( const char *vp, const char *fp)"
-            landmarkType = "9">
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "-prepareOpenGL"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

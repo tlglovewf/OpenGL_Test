@@ -18,6 +18,23 @@
 		6AF9A13720A3F9090094A75B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AEE608E1BB1ABF9003B12FB /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6A73569520AA866E0074285C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A73569120AA866E0074285C /* OpenGLShaderBasic.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090;
+			remoteInfo = OpenGLShaderBasic;
+		};
+		6A73569B20AA86740074285C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A73569720AA86740074285C /* OpenGLShaderBasic.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090;
+			remoteInfo = OpenGLShaderBasic;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		6A2A62A620901DFC0027F2D5 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -51,6 +68,8 @@
 /* Begin PBXFileReference section */
 		6A2A62A820901DFC0027F2D5 /* FBO_Texture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FBO_Texture; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2A62AA20901DFC0027F2D5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6A73569120AA866E0074285C /* OpenGLShaderBasic.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OpenGLShaderBasic.xcodeproj; path = OpenGLShaderBasic/OpenGLShaderBasic.xcodeproj; sourceTree = "<group>"; };
+		6A73569720AA86740074285C /* OpenGLShaderBasic.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OpenGLShaderBasic.xcodeproj; path = OpenGLShaderBasic/OpenGLShaderBasic.xcodeproj; sourceTree = "<group>"; };
 		6AEE60831BB1A796003B12FB /* XCodeOpengl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XCodeOpengl; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEE60861BB1A796003B12FB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6AEE608E1BB1ABF9003B12FB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -105,9 +124,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6A73569220AA866E0074285C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A73569620AA866E0074285C /* OpenGLShaderBasic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A73569820AA86740074285C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A73569C20AA86740074285C /* OpenGLShaderBasic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6AEE607A1BB1A796003B12FB = {
 			isa = PBXGroup;
 			children = (
+				6A73569120AA866E0074285C /* OpenGLShaderBasic.xcodeproj */,
+				6A73569720AA86740074285C /* OpenGLShaderBasic.xcodeproj */,
 				6AEE60901BB1ADEC003B12FB /* GLUT.framework */,
 				6AEE608E1BB1ABF9003B12FB /* OpenGL.framework */,
 				6AEE60851BB1A796003B12FB /* XCodeOpengl */,
@@ -230,6 +267,16 @@
 			mainGroup = 6AEE607A1BB1A796003B12FB;
 			productRefGroup = 6AEE60841BB1A796003B12FB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6A73569220AA866E0074285C /* Products */;
+					ProjectRef = 6A73569120AA866E0074285C /* OpenGLShaderBasic.xcodeproj */;
+				},
+				{
+					ProductGroup = 6A73569820AA86740074285C /* Products */;
+					ProjectRef = 6A73569720AA86740074285C /* OpenGLShaderBasic.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6AEE60821BB1A796003B12FB /* XCodeOpengl */,
@@ -238,6 +285,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6A73569620AA866E0074285C /* OpenGLShaderBasic.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OpenGLShaderBasic.app;
+			remoteRef = 6A73569520AA866E0074285C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6A73569C20AA86740074285C /* OpenGLShaderBasic.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OpenGLShaderBasic.app;
+			remoteRef = 6A73569B20AA86740074285C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A2A62A420901DFC0027F2D5 /* Sources */ = {
