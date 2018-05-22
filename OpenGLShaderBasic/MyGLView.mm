@@ -6,13 +6,20 @@
 //  Copyright 2010 GreenGames Studio. All rights reserved.
 //
 
-#import "MyGLView.h"
+#import  "MyGLView.h"
+//#import  "CADisplayLink.h"
+//#import "QuartzCore/CABase.h"
 #include <OpenGL/gl.h>
+#include "Math/Matrices.h"
+
 @implementation MyGLView
+
+
 
 // uniform index
 enum {
     UNIFORM_TRANSLATE,
+    UNIFORM_WORLDMATRIX,
     NUM_UNIFORMS
 };
 GLint uniforms[NUM_UNIFORMS];
@@ -24,6 +31,10 @@ enum {
     NUM_ATTRIBUTES
 };
 
+static void render()
+{
+    
+}
 //#define DEBUG
 
 - (BOOL) compileShader:(GLuint *)shader type:(GLenum)type file:(NSString *)file
@@ -147,6 +158,9 @@ enum {
     glBindAttribLocation(program, ATTRIB_VERTEX, "position");
     glBindAttribLocation(program, ATTRIB_COLOR, "color");
     
+    
+    
+    
     // link program
 	if (![self linkProgram:program])
 	{
@@ -155,7 +169,8 @@ enum {
 	}
     
     // get uniform locations
-    uniforms[UNIFORM_TRANSLATE] = glGetUniformLocation(program, "translate");
+    uniforms[UNIFORM_TRANSLATE]   = glGetUniformLocation(program, "translate");
+    uniforms[UNIFORM_WORLDMATRIX] = glGetUniformLocation(program, "worldMatrix");
     
     // release vertex and fragment shaders
     if (vertShader)
@@ -176,6 +191,7 @@ enum {
     return self;
 }
 
+
 - (void)prepareOpenGL
 {
     if(![self loadShaders])
@@ -183,7 +199,21 @@ enum {
     
     glViewport(0, 0, 320, 320);
     glClearColor(0.4f, 0.4f, 0.4f, 1.0f);
+
+    timer = [NSTimer timerWithTimeInterval:0.1f
+             
+                                    target:self
+             
+                                  selector:@selector(render:)//定时器每隔0.1s需要执行的函数
+             
+                                  userInfo:nil
+             
+                                   repeats:YES];
+    
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 }
+
+
 
 - (void)drawRect:(NSRect)dirtyRect {
     // Drawing code here.
@@ -193,31 +223,38 @@ enum {
         -0.5f,  0.33f,
         0.5f,  0.33f,
     };
-	
+
     static const GLubyte squareColors[] = {
         255, 255,   0, 255,
         0,   255, 255, 255,
         0,     0,   0,   0,
         255,   0, 255, 255,
     };
-    
+
     glClear(GL_COLOR_BUFFER_BIT);
-    
-	// Use shader program
+
+    // Use shader program
     glUseProgram(program);
-	
-	// Update uniform value
-	glUniform1f(uniforms[UNIFORM_TRANSLATE], 0.0f);
-    
-	// Update attribute values
+
+    float translate = 0.0;
+
+    // Update uniform value
+    glUniform1f(uniforms[UNIFORM_TRANSLATE], translate);
+
+    const int len = 2;
+    Matrix4 mat = Matrix4::MakeOrtho(-len, len, -len, len, -1, 100);
+
+    glUniformMatrix4fv(uniforms[UNIFORM_WORLDMATRIX], 1, GL_FALSE, mat.get());
+
+    // Update attribute values
     glVertexAttribPointer(ATTRIB_VERTEX, 2, GL_FLOAT, 0, 0, squareVertices);
     glEnableVertexAttribArray(ATTRIB_VERTEX);
     glVertexAttribPointer(ATTRIB_COLOR, 4, GL_UNSIGNED_BYTE, 1, 0, squareColors);
     glEnableVertexAttribArray(ATTRIB_COLOR);
-    
+
     // Draw
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
-    
+
     glFlush();
 }
 

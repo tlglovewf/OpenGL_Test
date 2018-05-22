@@ -7,10 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import <Foundation/NSTimer.h>
 
 @interface MyGLView : NSOpenGLView {
     GLuint program;
+    NSTimer *timer;
 }
 
 @end

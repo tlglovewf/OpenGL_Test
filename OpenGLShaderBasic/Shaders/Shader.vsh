@@ -8,12 +8,15 @@
 
 attribute vec4 position;
 attribute vec4 color;
-varying vec4 colorVarying;
+varying   vec4 colorVarying;
+//varying   float transVarying;
 
 uniform float translate;
+uniform mat4  worldMatrix;
 
 void main()
 {
-	gl_Position = position;
+    gl_Position =  position * worldMatrix  ;
     colorVarying = color;
+//    transVarying = translate;
 }

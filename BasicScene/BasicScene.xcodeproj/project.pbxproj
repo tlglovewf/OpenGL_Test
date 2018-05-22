@@ -44,9 +44,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A029EE720B2C0EF0082A7B5 /* triangle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = triangle;
+			sourceTree = "<group>";
+		};
 		6ACD475A20A938D2009CFFF2 = {
 			isa = PBXGroup;
 			children = (
+				6A029EE720B2C0EF0082A7B5 /* triangle */,
 				6ACD476520A938D2009CFFF2 /* BasicScene */,
 				6ACD476420A938D2009CFFF2 /* Products */,
 				6ACD476D20A9390C009CFFF2 /* Frameworks */,

@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		256AC3DA0F4B6AC300CF3369 /* OpenGLShaderBasicAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* OpenGLShaderBasicAppDelegate.m */; };
+		6A7356A120AA89DB0074285C /* Matrices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A73569F20AA89DB0074285C /* Matrices.cpp */; };
+		6A7356A420AA8F3F0074285C /* clipper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A7356A220AA8F3F0074285C /* clipper.cpp */; };
+		6A7356AB20AC28F90074285C /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7356AA20AC28F90074285C /* AppKit.framework */; };
+		6A7356B320AC39EC0074285C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7356B220AC39EC0074285C /* Foundation.framework */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		E5492F531258F3AF008D42DA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5492F521258F3AF008D42DA /* OpenGL.framework */; };
-		E5492F621258F4FF008D42DA /* MyGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5492F611258F4FF008D42DA /* MyGLView.m */; };
+		E5492F621258F4FF008D42DA /* MyGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5492F611258F4FF008D42DA /* MyGLView.mm */; };
 		E5B385BD1259B3200018F1B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		E5B385BE1259B3200018F1B9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		E5B386771259C7270018F1B9 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E5B386591259C6760018F1B9 /* Shader.fsh */; };
@@ -27,13 +31,22 @@
 		256AC3D90F4B6AC300CF3369 /* OpenGLShaderBasicAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLShaderBasicAppDelegate.m; sourceTree = "<group>"; };
 		256AC3F00F4B6AF500CF3369 /* OpenGLShaderBasic_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLShaderBasic_Prefix.pch; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		6A73569E20AA89DB0074285C /* Matrices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrices.h; sourceTree = "<group>"; };
+		6A73569F20AA89DB0074285C /* Matrices.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrices.cpp; sourceTree = "<group>"; };
+		6A7356A020AA89DB0074285C /* Vectors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vectors.h; sourceTree = "<group>"; };
+		6A7356A220AA8F3F0074285C /* clipper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clipper.cpp; sourceTree = "<group>"; };
+		6A7356A320AA8F3F0074285C /* clipper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = clipper.hpp; sourceTree = "<group>"; };
+		6A7356AA20AC28F90074285C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		6A7356AC20AC2D530074285C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		6A7356AE20AC32830074285C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		6A7356B020AC32E90074285C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		6A7356B220AC39EC0074285C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8D1107310486CEB800E47090 /* OpenGLShaderBasic-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OpenGLShaderBasic-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* OpenGLShaderBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLShaderBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5492F521258F3AF008D42DA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		E5492F601258F4FF008D42DA /* MyGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGLView.h; sourceTree = "<group>"; };
-		E5492F611258F4FF008D42DA /* MyGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGLView.m; sourceTree = "<group>"; };
+		E5492F611258F4FF008D42DA /* MyGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyGLView.mm; sourceTree = "<group>"; };
 		E5B386591259C6760018F1B9 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = SOURCE_ROOT; };
 		E5B3865A1259C6760018F1B9 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -43,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A7356B320AC39EC0074285C /* Foundation.framework in Frameworks */,
+				6A7356AB20AC28F90074285C /* AppKit.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				E5492F531258F3AF008D42DA /* OpenGL.framework in Frameworks */,
 			);
@@ -57,7 +72,7 @@
 				256AC3D80F4B6AC300CF3369 /* OpenGLShaderBasicAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* OpenGLShaderBasicAppDelegate.m */,
 				E5492F601258F4FF008D42DA /* MyGLView.h */,
-				E5492F611258F4FF008D42DA /* MyGLView.m */,
+				E5492F611258F4FF008D42DA /* MyGLView.mm */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -73,7 +88,6 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
 				E5492F521258F3AF008D42DA /* OpenGL.framework */,
@@ -92,6 +106,7 @@
 		29B97314FDCFA39411CA2CEA /* OpenGLShaderBasic */ = {
 			isa = PBXGroup;
 			children = (
+				6A73569D20AA89A20074285C /* Math */,
 				E5B386581259C6760018F1B9 /* Shaders */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -124,10 +139,27 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A7356B220AC39EC0074285C /* Foundation.framework */,
+				6A7356B020AC32E90074285C /* CoreVideo.framework */,
+				6A7356AE20AC32830074285C /* CoreAudio.framework */,
+				6A7356AC20AC2D530074285C /* QuartzCore.framework */,
+				6A7356AA20AC28F90074285C /* AppKit.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A73569D20AA89A20074285C /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				6A7356A220AA8F3F0074285C /* clipper.cpp */,
+				6A7356A320AA8F3F0074285C /* clipper.hpp */,
+				6A73569F20AA89DB0074285C /* Matrices.cpp */,
+				6A73569E20AA89DB0074285C /* Matrices.h */,
+				6A7356A020AA89DB0074285C /* Vectors.h */,
+			);
+			path = Math;
 			sourceTree = "<group>";
 		};
 		E5B386581259C6760018F1B9 /* Shaders */ = {
@@ -211,8 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				6A7356A420AA8F3F0074285C /* clipper.cpp in Sources */,
+				6A7356A120AA89DB0074285C /* Matrices.cpp in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* OpenGLShaderBasicAppDelegate.m in Sources */,
-				E5492F621258F4FF008D42DA /* MyGLView.m in Sources */,
+				E5492F621258F4FF008D42DA /* MyGLView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,9 +7,9 @@
 //
 
 varying vec4 colorVarying;
-
+//varying   float transVarying;
 void main()
 {
 	gl_FragColor = colorVarying;
-    gl_FragColor.r = 1.0;
+//    gl_FragColor.r = transVarying;
 }
